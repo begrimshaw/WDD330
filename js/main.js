@@ -1,6 +1,6 @@
 
 
-const links = ["Week1 notes", "week2 Notes"]
+const links = ["Week1 notes", "Week2 Notes"]
 
 for(var i=0; i<links.length; i++) {
 
