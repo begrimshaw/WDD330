@@ -1,4 +1,3 @@
-
 //Array of assignments
 const links = ["Week 1 Notes", "Week2 Notes"]
 
