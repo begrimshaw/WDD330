@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkNumber() {
+            var numberAsText = document.getElementById("number_input").value;
+            var remainder = numberAsText % 2;
+            if(remainder == 0) {
+                document.getElementById("result_display").innerHTML = numberAsText + " is even"; 
+            }
+            else {
+                document.getElementById("result_display").innerHTML = numberAsText + " is odd"; 
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+    <h1>Even or Odd</h1>
+    <h3>Enter a Number:</h3>
+    <input id="number_input" ></input>
+    <button onclick="checkNumber()">Check Number!</button>
+    <section id="result_display"></section>
+</body>
+</html>
