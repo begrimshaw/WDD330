@@ -5,15 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+             background-color: lightgray;
+             justify-content: center;
+        }
+        input {
+            height: 25px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            text-indent: 5px;
+            box-shadow: 0px 0px 5px #666666 inset;
+        }
+    </style>
     <script>
         function checkNumber() {
             var numberAsText = document.getElementById("number_input").value;
-            var remainder = numberAsText % 2;
-            if(remainder == 0) {
-                document.getElementById("result_display").innerHTML = numberAsText + " is even"; 
-            }
-            else {
-                document.getElementById("result_display").innerHTML = numberAsText + " is odd"; 
+            
+            var aNumber = parseInt(numberAsText);
+            if(numberAsText != "" && !isNaN(aNumber)) {
+                var remainder = Math.abs(aNumber % 2);
+                if(remainder == 0 && numberAsText != 0) {
+                    document.getElementById("result_display").innerHTML = numberAsText + " is even"; 
+                }
+                else if (numberAsText != 0 && remainder >=1 ){
+                    document.getElementById("result_display").innerHTML = numberAsText + " is odd"; 
+                }
+                else {
+                    document.getElementById("result_display").innerHTML = "0 is neither even nor odd";
+                }
             }
         }
     </script>
