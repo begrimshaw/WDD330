@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3 Notes</title>
+</head>
+<body>
+    <h1>Week3 Readings</h1>
+    
+    <h3>Chapter 5</h3>
+    <ul>
+        <li>Object literals make JS a lot easier to use. I do get confused between an object literal and a defined class in javascript as it looks like they can do similar things.</li>
+        <li>there are also a lot of different ways to access the properties in an object. I'm not sure why there are so many ways and if there are times when you MUST use one or the other. </li>
+        <li>I also didn't know that I could nest objects and it seems really easy to call them back. </li>
+        <li>I've started to use JSON in my backend class. I still don't fully understand why we use JSON but I understand what is inside a JSON file. In the book example,
+            the function lasso() under the WonderWoman object isn't converted after stringify(). What happens to that function when we want to call JSON.parse()?
+        </li>
+        <li>I was always told that I would use a lot of math in coding. I think I have barely had to use math other than a few small equations. Not sure if I was lied to or 
+            if I've been doing it all wrong. It's a good thing too becuase I don't recognize or understand over half these math functions. 
+        </li>
+        <li> Math.random() I have used a number of times. I never understood how (6* math.random()) made any sense but now I see that it is between 0 and 6 that it picks the number.</li>
+        <li>RegEx has always been the worst. Everytime I've had to do it I've done so unsuccessfully. </li>
+    </ul>
+    <h3>Chapter 6 The Document Object Model</h3>
+    <ul>
+        <li>DOM represents HTML document as connected, tree-like nodes.</li>
+        <li>I wonder what the difference is between a "node list" like when we return document.images, and an array. They seem to act very similarly. </li>
+        <li>I think I understand how the DOM tree works. I'm not sure when I will use the query selector for things like getting the first child or the last child.</li>
+        <li>Also I have changed classes in my html based on input sent for JS but I have never been in JS and added a class. That seems much easier. Why would some
+            times I have an if statement in ejs to activate a class instead of in the backend adding 'active' to the classlist when that page is loaded? 
+        </li>
+        <li>A lot of the DOM things that have to do with adding elements to an html documnet I feel are not used very much because of the option of having template pages</li>
+    </ul>
+    <h3>Chapter 7: Events</h3>
+    <ul>
+        <li>Event listeners seem very helpful. I've used onclick() a number of times but I didn't know that it wasn't the preferred method. </li>
+        <li>Here is a <a href="events.html">link</a> to the events example.</li>
+        <li>Touch events are the same thing as click events. But can I just use click events? Will the browser recognize a touch as a click event always? </li>
+        <li>I'm not sure I've ever been good at events. Hopefully I can understand them better here. </li>
+        <li>Is there a limit to event listners you can use on a page? At what point does the page get really slow? </li>
+
+    </ul>
+
+
+    <h3>Questions</h3>
+    <ul>
+        <li>After reading today I realized that I am working with Node.js in my backend class. What is the difference between normal JS and node.js? </li>
+        <li>Callback functions. I see them used everywhere but they can get really complicated. What are they used for? One example can be seen in the event listner link 
+            above. In the do something function there is a parameter called (event) being passed in. dosomething() is getting called by the evenlistner so where is the event 
+            parameter coming from? 
+        </li>
+        <li>What is the difference between an object literal and a class? they can both hold variables and methods. After viewing the section on "Namespacing" I'm even more confused 
+            with an object and a class. 
+        </li>
+        <li>Can a JSON file act as a database? Or do databases hold JSON objects? I haven't had much experience with JSON or databases and they seem fairly similar. 
+            Are there other ways to store JS objects besides JSON? 
+        </li>
+        <li>
+            In the book example, the function lasso() under the WonderWoman object isn't converted after stringify(). What happens to that function when we want to 
+            call JSON.parse()?
+        </li>
+        <li>In web development we use the getElementById() a lot. Is it common practice to have Id's connected to the backend and classes connected to the css?</li>
+        <li>What is the difference between an event listener and just a submit button in a form? </li>
+    </ul>
+
+
+</body>
+</html>
