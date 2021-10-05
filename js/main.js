@@ -1,6 +1,6 @@
 //Array of assignments
 const links = ["Week 1 Notes", "Week2 Notes", "Week 3 Notes"]
-
+ 
 for(var i=0; i<links.length; i++) {
 
     j = i + 1; 
