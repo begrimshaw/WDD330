@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 05</title>
+</head>
+<body>
+    <a href="/week5/team/team.html">Team Activity</a>
+    <h3>Chapter 10: Testing and Debugging</h3>
+    <ul>
+        <li>I have never been good at testing and debugging. The only "debugging" i have done is when I get an error I look at the line and can walk through the code 
+            to figure out why that line is wrong. 
+        </li>
+        <li>Stack Trace: sequence of functions/methods that lead to the error. I'm not sure I have recognized this. I feel like the error is usually what shoes up alone</li>
+        <li>Importance: need to make sure the code fails and notifies us if it does but without affecting the user experience. </li>
+        <li>There is a "strict mode" that will produce more exceptions and warnings so you can catch errors early on. It even doesn't allow sloppy code practices</li>
+        <li>To use strict mode add " 'use strict'; " to the first line in a javaScript file</li>
+        <li>You can also 'use strict' just inside a specific function by putting it on the first line of that function instead</li>
+        <li>"Linting tools (JS Lint, JS Hint, ES Lint) can test the quality of JS code. They highlihgt sloppy practices, syntax errors, and certain style 
+            conventions. They can also enforce style guide. They are very unforgiving. 
+        </li>
+        <li>I've heard of "linting" from small references on linkdin and around the community but I never knew what it actually was</li>
+        <li>Feature detection: the recommended way to determine browser support for a feature is to use feature detection. Use an if statement to check whether an 
+            object or method exists before trying to call the method. This makes sure that no matter what browser the user has we can check to see if a feature will work</li>
+        <h4>Debugging</h4>
+        <li>there is always the alert() method to show a dialog during certain points of code. It stops the program from running until OK is clicked so we can put
+            breakpoints in the code. 
+        </li>
+        <li>Another way of debugging is using the console. console.log() will output anything we tell it to. console.trace() will show the stack trace of the functions that were 
+            called in the lead up to that exception
+        </li>
+        <li>putting in the word "debugger;" in your code will cause a breakpoint in the browser and pause the code while you can hover over variables and check their values.
+            should remember to remove all of those lines before the final product is released
+        </li>
+        <li>there are a number of error objectst that can be used for specific errors</li>
+        <li>JS throws exceptions when it finds errors but we can manually invoke an excep[tion but the 'throw' statement. If something is thrown the code will stop executing
+            it is best practice to throw an error object. 
+        </li>
+        <h4>Exception Handling</h4>
+        <li>During development, when a program throws an exception we can go and fix the exception. In production however we do not want the program to break. This is fixed 
+            through execption handling. It will had any errors from the users but still identify that there is an error. 
+        </li>
+        <li>If a piece of code may end in an exception we put it inside a try, catch. The try will run the code like normal and skip the catch if everything works. If there 
+            is an error then the catch will execute other code. There is also a 'finally' that will be ran no matter what. 
+        </li>
+        <h4>Tests</h4>
+        <li>Simple tests on functions. We deliberatly pass values in instead of waiting for user input to make sure that they are working correctly</li>
+        <li>There are also testing framworks in JS that make it easy to cretae and run tests. </li>
+
+
+
+    </ul>
+
+
+</body>
+</html>

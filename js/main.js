@@ -1,5 +1,5 @@
 //Array of assignments
-const links = ["Week 1 Notes", "Week2 Notes", "Week 3 Notes", "Week 4 Notes"]
+const links = ["Week 1 Notes", "Week2 Notes", "Week 3 Notes", "Week 4 Notes", "Week 5 Notes"]
  
 for(var i=0; i<links.length; i++) {
 
