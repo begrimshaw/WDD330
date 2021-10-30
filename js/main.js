@@ -5,6 +5,7 @@ const links = [
   "Week 3 Notes",
   "Week 4 Notes",
   "Week 5 Notes",
+  "Week 6 Notes (nothing here)",
   "Week 7 notes",
 ];
 
