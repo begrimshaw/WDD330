@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 7</title>
+  </head>
+  <body>
+    <h3>Chapter 11: Further Functions</h3>
+    <ul>
+      <li>
+        the .call() on the end of the function will pass the parameter in as
+        'this'. I'm not sure when I would use this over just having the function
+        accept a parameter to begin with.
+      </li>
+      <li>
+        Memoization allows us to save a result in a cache property and then use
+        it later rather than having to call the function again. this is helpful
+        for computations that take a long time
+      </li>
+      <li>
+        Temparary variable (temp) allows you to hold information for a short
+        time and then it is erased
+      </li>
+      <li>Can write code in self-contained blocks to execute them separetly</li>
+      <li>
+        I think the most interesting thing is a function that can redefine
+        itself. I have never heard of this and I am curiuos as to a real life
+        example of needing to do this rather than writing a brand new function.
+        It is especially werid because only the first time the function is
+        called is it used. After the first time, it is always defaulted to what
+        it was redefined to.
+      </li>
+      <li>
+        Recursive function is one that invokes itself until a certain condition
+        is met. Helpful for an iterative process.
+      </li>
+      <li>
+        I'm not sure if I understand callbacks or not. I've used them countless
+        times but if I were to try and define them I don't think I could I know
+        they are extremely popular and helpful but it is confusing how they are
+        passed as a parameter but ran as a function.
+      </li>
+      <li>
+        All of the nested callbacks are very confusing. Because there are
+        multiple parameters passed into with the callback. I don't know what
+        happens to the other parameters because it is clear that the callback is
+        called so when can the other parameters get used?
+      </li>
+      <li>Promises: I've had to learn about promises in node.js. But</li>
+      <li>
+        A promise represents the future result of an asynchronous operation.
+        They don't do anything that can't already be achieved using callbacks.
+      </li>
+      <li>
+        When a promise is created it is set to pending until the operation is
+        complete. Then it is either resolved or rejected
+      </li>
+      <li>you can chain multiple together .then().then().then().catch()</li>
+      <li>Functions can return functions</li>
+      <li>
+        I never knew there was so much that could be done with functions. is it
+        worth knowing all of these things or should they just be learned as
+        necessary in the field?
+      </li>
+      <li>
+        Highier order either accepts a function as an argument or returns a
+        function as a result.
+      </li>
+      <li>
+        I think that I have used higher order functions when returning a
+        function.
+      </li>
+      <li>
+        In a curried function, it talks about not having all of the parameters
+        necessary so you call another function. What I don't understand is where
+        that function is getting it's parameter if it is inside the scope of the
+        first function.
+      </li>
+    </ul>
+
+    <h3>Chapter 13: AJAX</h3>
+    <ul>
+      <li>Always heard of AJAX, have no idea what it is</li>
+      <li>
+        Ajax is a technique that allows web pages to communicate asynchronously
+        with a server. It dynamically updates web pages without reloading them
+      </li>
+      <li>
+        Revolutionized how websites worked as they were no longer static but
+        dynamic.
+      </li>
+      <li>
+        Client is a web browser that will request a resource. Server will
+        process the request and send back a response
+      </li>
+      <li>Server side language such as node.js</li>
+      <li>
+        Asynchronous: when a request doesn't stop the program and wait for a
+        response.
+      </li>
+      <li>
+        API- application programming interface is a collestion of methods that
+        allows external access to another program or service
+      </li>
+      <li>
+        Fetch API is standard for reuesting and sending data asynchronously
+        across a network. Uses promises.
+        <ul>
+          <li>Uses fetch() method which takes the URL as an argument.</li>
+          <li>returns a promise that resolves the response from the URL</li>
+          <li>
+            Each response has an "ok" property to check if the response was
+            successful
+          </li>
+          <li>
+            <img src="fetchExample.PNG" alt="Example of Fetch and response" />
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
