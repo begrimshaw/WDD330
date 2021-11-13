@@ -7,7 +7,8 @@ const links = [
   "Week 5 Notes",
   "Week 6 Notes (nothing here)",
   "Week 7 notes",
-  "Week 8 Notes"
+  "Week 8 Notes",
+  "Week 9 Notes",
 ];
 
 for (var i = 0; i < links.length; i++) {
