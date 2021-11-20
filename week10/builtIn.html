@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Place your Order</h1>
+    <h1>Built in form validation</h1>
+    <form>
+      <label for="choose">Would you like to place an order? (Y, N)</label>
+      <input id="choose" name="i_like" required />
+      <br />
+      <br />
+      <label for="choose">For Here or To Go?</label>
+      <input id="choose" name="i_like" required pattern="[Hh]ere|[Tt]o [Gg]o" />
+      <br />
+      <br />
+      <label for="number">How many hamburgers would you like?</label>
+      <input
+        type="number"
+        id="number"
+        name="amount"
+        value="1"
+        min="1"
+        max="15"
+      />
+      <button>Submit</button>
+    </form>
+
+    <h1>Validating Using JavaScript</h1>
+    <form>
+      <label for="mail">What Email is good for your order?</label>
+      <input type="email" id="mail" name="mail" />
+      <button>Submit</button>
+    </form>
+
+    <script src="formVal.js"></script>
+  </body>
+</html>

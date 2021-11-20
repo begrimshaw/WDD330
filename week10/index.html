@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Client-side Form Validation</h1>
+    <ul>
+      <li>
+        Ensures that all required form controls are filled out before the form
+        is submitted
+      </li>
+      <li>
+        Allows the user to fix the data right away.. Doesn't feed in bad
+        information to the backend
+      </li>
+      <li>
+        Server-side validation is once the data is passed through. Clien-side is
+        before it is submitted
+      </li>
+      <li>
+        Goal: Get the data in the right format, protect our users' data, protect
+        our program
+      </li>
+      <li>
+        Types of form validation:
+        <ul>
+          <li>
+            Built-in form validation: uses html 5. Not as customizable as JS
+          </li>
+          <li>
+            JavaScript: coded in JS, completely customizable but needs to be
+            created by scratch or pulled in from a library
+          </li>
+        </ul>
+      </li>
+      <h3>Built in Form Validation:</h3>
+      <li>Use validation attributes on form elements</li>
+      <li>
+        attributes: required, minlength, maxlength, min, max, type, pattern
+      </li>
+      <li>
+        If elemnt is valid it will match a :valid CSS class which allows you to
+        apply specific style to valid elements
+      </li>
+      <li>
+        When element is invlaid it will match :invalid CSS class. Browser will
+        block the code from being sent.
+      </li>
+      <li>
+        <a href="builtIn.html">Link</a> to a built in form validation example
+      </li>
+      <li>
+        After trying both of those out, I feel like built in form validation is
+        much easier. But I understand that there is a lot more customizable
+        options with JS.
+      </li>
+    </ul>
+    <h1>Using Fetch</h1>
+    <h1>API Example</h1>
+    <p>
+      Here is a <a href="chuckNorrisAPI/api.html">link</a> to a quick API I
+      connected to. (Hint: Click the image).
+    </p>
+    <p>
+      Disclaimer: This was a quick API search and I wanted to use fetch for the
+      first time... Not all of the "jokes" it generates are clean so I hope you
+      get a decent one.
+    </p>
+    <ul>
+      <li>Fetch API allows JS to access request and responses</li>
+      <li>fetch req just goes to a url and returns a promise.</li>
+      <li>
+        The response does not contain actual JSON. you must extract the JSON
+        from the response
+      </li>
+      <li>If credentials must be included then they are sent with the req.</li>
+      <li>You can "POST" JSON data using fetch as well.</li>
+      <li>You can upload a file with fetch</li>
+      <li>
+        I'm a little confused.. I though fetch() was to link to an API and pull
+        data from it.. Why can I know send JSON data and upload files using
+        fetch?
+      </li>
+    </ul>
+  </body>
+</html>
