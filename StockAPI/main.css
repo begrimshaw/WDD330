@@ -1,0 +1,4 @@
+input:focus {
+  background-color: rgb(161, 182, 230);
+  transition: 0s, 0.5s linear;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bulma.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Stock API</title>
+  </head>
+  <body class="has-background-grey-dark has-text-white">
+    <nav class="navbar has-text-centered is-uppercase is-dark">
+      <div class="navbar-item">
+        <p class="title is-centered has-text-white-ter">Stocks</p>
+      </div>
+    </nav>
+    <!-- Trending -->
+    <div class="container">
+      <div class="is-full">
+        <h1
+          class="subtitle has-text-white-ter mt-4 ml-3 is-italic is-underlined"
+        >
+          Trending
+        </h1>
+        <div class="columns is-flex">
+          <div
+            class="
+              summary
+              is-flex
+              is-flex-wrap-wrap
+              is-flex-direction-row
+              is-justify-content-center
+            "
+            id="summary"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- Look up -->
+    <div class="container mt-4">
+      <div class="is-full is-flex is-justify-content-center">
+        <form class="is-full">
+          <div class="field ml-2">
+            <input
+              type="text"
+              class="symbolInput input is-rounded is-small mt-4"
+              id="symbolInput"
+              style="width: 100%"
+            />
+          </div>
+          <div class="control">
+            <button
+              class="button is-centered mt-2 mb-4 ml-4"
+              id="symbolBtn"
+              onclick="getStock(event)"
+            >
+              Look Up Stock
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- CARD -->
+      <div class="columns is-centered">
+        <div
+          class="card-wrapper column is-half is-centered"
+          id="card-wrapper"
+        ></div>
+      </div>
+
+      <p class="urlTest" id="urlTest"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
